@@ -1,6 +1,8 @@
 import selenium
 import pandas as pd
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+
 driver = webdriver.Chrome(r"C:\Users\Prabhakar Joshi\Downloads\chromedriver_win32\chromedriver.exe")
 driver.get("https://www.flipkart.com/")
 product = driver.find_element(By.CLASS_NAME,"_3704LK")
